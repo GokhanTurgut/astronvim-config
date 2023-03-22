@@ -24,7 +24,9 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     -- refresh buffers after a git branch change
-    ["<leader>br"] = { ":e<cr>", desc = "Refresh buffers" }
+    ["<leader>br"] = { ":e<cr>", desc = "Refresh buffers" },
+    -- reset changes to the last save
+    ["<leader>bR"] = { ":edit!<cr>", desc = "Reset changes" }
   },
   t = {
     -- setting a mapping to false will disable it
