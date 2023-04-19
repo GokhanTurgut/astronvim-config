@@ -23,4 +23,11 @@ return {
       require("tokyonight").setup {}
     end,
   },
+  {
+    "projekt0n/github-nvim-theme",
+    as = "github-theme",
+    config = function()
+      require("github-theme").setup {}
+    end,
+  },
 }
