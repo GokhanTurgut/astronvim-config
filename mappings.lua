@@ -26,7 +26,9 @@ return {
     -- refresh buffers after a git branch change
     ["<leader>br"] = { ":e<cr>", desc = "Refresh buffers" },
     -- reset changes to the last save
-    ["<leader>bR"] = { ":edit!<cr>", desc = "Reset changes" }
+    ["<leader>bR"] = { ":edit!<cr>", desc = "Reset changes" },
+    -- preview markdown files on the browser
+    ["<leader>lm"] = { ":MarkdownPreview<cr>", desc = "Markdown preview"}
   },
   t = {
     -- setting a mapping to false will disable it
