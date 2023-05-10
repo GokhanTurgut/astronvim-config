@@ -31,6 +31,15 @@ return {
     -- after half page navigation center the screen
     ["<C-d>"] = { "<C-d>zz" },
     ["<C-u>"] = { "<C-u>zz" },
+    -- buffer movement
+    ["[["] = {
+      function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+      desc = "Previous buffer",
+    },
+    ["]]"] = {
+      function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+      desc = "Next buffer",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
