@@ -11,10 +11,9 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr)
-          require("astronvim.utils.buffer").close(
-            bufnr)
-        end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
@@ -28,7 +27,10 @@ return {
     -- reset changes to the last save
     ["<leader>bR"] = { ":edit!<cr>", desc = "Reset changes" },
     -- preview markdown files on the browser
-    ["<leader>lm"] = { ":MarkdownPreview<cr>", desc = "Markdown preview"}
+    ["<leader>lm"] = { ":MarkdownPreview<cr>", desc = "Markdown preview" },
+    -- after half page navigation center the screen
+    ["<C-d>"] = { "<C-d>zz" },
+    ["<C-u>"] = { "<C-u>zz" },
   },
   t = {
     -- setting a mapping to false will disable it
