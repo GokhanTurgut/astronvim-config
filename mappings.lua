@@ -40,6 +40,10 @@ return {
       function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
       desc = "Next buffer",
     },
+    -- typescript.nvim mappings
+    ["<leader>lt"] = { desc = "TypeScript" },
+    ["<leader>lto"] = { ":TypescriptOrganizeImports<cr>", desc = "Organize imports" },
+    ["<leader>lta"] = { ":TypescriptAddMissingImports<cr>", desc = "Add imports" },
   },
   t = {
     -- setting a mapping to false will disable it
