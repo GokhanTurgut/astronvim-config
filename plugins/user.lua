@@ -12,22 +12,17 @@ return {
   {
     "catppuccin/nvim",
     as = "catppuccin",
-    config = function()
-      require("catppuccin").setup {}
-    end,
+    config = function() require("catppuccin").setup {} end,
   },
   {
     "folke/tokyonight.nvim",
     as = "tokyonight",
-    config = function()
-      require("tokyonight").setup {}
-    end,
+    config = function() require("tokyonight").setup {} end,
   },
   {
     "iamcco/markdown-preview.nvim",
     event = "BufRead",
-    build = function()
-      vim.fn["mkdp#util#install"]()
-    end,
+    build = function() vim.fn["mkdp#util#install"]() end,
   },
+  { "jose-elias-alvarez/typescript.nvim" },
 }

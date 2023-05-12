@@ -48,6 +48,10 @@ return {
     servers = {
       -- "pyright"
     },
+    setup_handlers = {
+      -- add custom handler
+      tsserver = function(_, opts) require("typescript").setup { server = opts } end,
+    },
   },
   -- Configure require("lazy").setup() options
   lazy = {
