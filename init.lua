@@ -47,6 +47,23 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      -- "ruby_ls",
+      -- "sorbet",
+    },
+    config = {
+      ruby_ls = {
+        -- cmd = { "bundle", "exec", "ruby-lsp" },
+        init_options = {
+          enabledFeatures = {
+            "documentHighlights",
+            "semanticHighlighting",
+            "codeActions",
+          },
+        },
+      },
+      -- sorbet = {
+      --   cmd = {"bin/srb", "tc", "--lsp", "--cache-dir", "sorbet"},
+      -- }
     },
     setup_handlers = {
       -- add custom handler
