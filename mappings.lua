@@ -35,7 +35,10 @@ return {
     ["<leader>lt"] = { desc = "TypeScript" },
     ["<leader>lto"] = { ":TypescriptOrganizeImports<cr>", desc = "Organize imports" },
     ["<leader>lta"] = { ":TypescriptAddMissingImports<cr>", desc = "Add imports" },
+    -- yank the file path
+    ["<leader>y"] = { ":let @+ = expand(\"%\")<cr>", desc = "Yank file path" },
   },
+
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
