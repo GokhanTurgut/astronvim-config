@@ -39,7 +39,7 @@ return {
       disabled = { -- disable formatting capabilities for the listed language servers
         -- "sumneko_lua",
       },
-      timeout_ms = 3000, -- default format timeout
+      timeout_ms = 9000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
       --   return true
       -- end
@@ -47,19 +47,12 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
-      -- "ruby_ls",
+      "ruby_ls",
       -- "sorbet",
     },
     config = {
       ruby_ls = {
-        -- cmd = { "bundle", "exec", "ruby-lsp" },
-        init_options = {
-          enabledFeatures = {
-            "documentHighlights",
-            "semanticHighlighting",
-            "codeActions",
-          },
-        },
+        cmd = { "bundle", "exec", "ruby-lsp" },
       },
       -- sorbet = {
       --   cmd = {"bin/srb", "tc", "--lsp", "--cache-dir", "sorbet"},
