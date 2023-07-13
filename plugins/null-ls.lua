@@ -12,9 +12,9 @@ return {
       -- null_ls.builtins.formatting.stylua,
       -- null_ls.builtins.formatting.prettier,
       -- For Gusto repos
-      -- require("null-ls").builtins.formatting.rubocop.with {
-      --   command = "bin/rubocop",
-      -- },
+      require("null-ls").builtins.formatting.rubocop.with {
+        command = "bin/rubocop",
+      },
       require("null-ls").builtins.diagnostics.rubocop.with {
         command = "bin/rubocop",
       },
