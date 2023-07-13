@@ -37,6 +37,8 @@ return {
     ["<leader>lta"] = { ":TypescriptAddMissingImports<cr>", desc = "Add imports" },
     -- yank the file path
     ["<leader>y"] = { ":let @+ = expand(\"%\")<cr>", desc = "Yank file path" },
+    -- open copilot panel
+    ["<leader>lc"] = { ":Copilot panel<cr>", desc = "Copilot panel" },
   },
 
   t = {
