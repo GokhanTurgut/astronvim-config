@@ -47,13 +47,13 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
-      "ruby_ls",
+      -- "ruby_ls",
       -- "sorbet",
     },
     config = {
-      ruby_ls = {
-        cmd = { "bundle", "exec", "ruby-lsp" },
-      },
+      -- ruby_ls = {
+      --   cmd = { "bundle", "exec", "ruby-lsp" },
+      -- },
       -- sorbet = {
       --   cmd = {"bin/srb", "tc", "--lsp", "--cache-dir", "sorbet"},
       -- }
