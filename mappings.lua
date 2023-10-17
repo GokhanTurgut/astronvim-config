@@ -39,6 +39,8 @@ return {
     ["<leader>y"] = { ":let @+ = expand(\"%\")<cr>", desc = "Yank file path" },
     -- open copilot panel
     ["<leader>lc"] = { ":Copilot panel<cr>", desc = "Copilot panel" },
+    -- telescope grep with args
+    ["<leader>fw"] = { ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", desc = "Find words with args" }
   },
 
   t = {
