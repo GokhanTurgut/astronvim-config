@@ -36,7 +36,7 @@ return {
     ["<leader>lto"] = { ":TypescriptOrganizeImports<cr>", desc = "Organize imports" },
     ["<leader>lta"] = { ":TypescriptAddMissingImports<cr>", desc = "Add imports" },
     -- yank the file path
-    ["<leader>y"] = { ":let @+ = expand(\"%\")<cr>", desc = "Yank file path" },
+    ["<leader>y"] = { ":let @+ = expand('%:.')<cr>", desc = "Yank relative path" },
     -- open copilot panel
     ["<leader>lc"] = { ":Copilot panel<cr>", desc = "Copilot panel" },
     -- telescope grep with args
