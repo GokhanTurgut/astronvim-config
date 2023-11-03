@@ -19,5 +19,4 @@ return {
     event = "BufRead",
     build = function() vim.fn["mkdp#util#install"]() end,
   },
-  { "jose-elias-alvarez/typescript.nvim" },
 }
