@@ -31,10 +31,10 @@ return {
     -- after half page navigation center the screen
     ["<C-d>"] = { "<C-d>zz" },
     ["<C-u>"] = { "<C-u>zz" },
-    -- typescript.nvim mappings
-    ["<leader>lt"] = { desc = "TypeScript" },
-    ["<leader>lto"] = { ":TypescriptOrganizeImports<cr>", desc = "Organize imports" },
-    ["<leader>lta"] = { ":TypescriptAddMissingImports<cr>", desc = "Add imports" },
+    -- the previous plugin is deprecated, this will be replaced by a new plugin
+    -- ["<leader>lt"] = { desc = "TypeScript" },
+    -- ["<leader>lto"] = { ":TypescriptOrganizeImports<cr>", desc = "Organize imports" },
+    -- ["<leader>lta"] = { ":TypescriptAddMissingImports<cr>", desc = "Add imports" },
     -- yank the file path
     ["<leader>y"] = { ":let @+ = expand('%:.')<cr>", desc = "Yank relative path" },
     -- open copilot panel
